@@ -25,6 +25,8 @@ Exemple de credentials.json :
 ```
 en suite, il faudra modifier les différentes variables intéragissant avec sois un serveur spécifique (guild), sois un channel spécifique.
 
+NOTE : Vous devez, pour la connexion et le refresh du token à l'api de Spotify, vous connecter avec le lien qui sera publié dans la console lors de l'exécution.
+Vous avez le choix, utiliser l'ip "localhost" si vous exécuter le bot localement ou avec la variable "nogui" au lancement, vous donnant une URL publique de connexion.
 
 # Comment rajouter une commande ?
 
