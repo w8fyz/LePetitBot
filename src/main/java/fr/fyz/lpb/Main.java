@@ -14,8 +14,6 @@ import javax.security.auth.login.LoginException;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletHandler;
 
-import com.google.common.base.Charsets;
-import com.google.common.io.Files;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 
@@ -58,8 +56,10 @@ public class Main {
 
 	@SuppressWarnings("serial")
 	public static void main(String[] args) throws LoginException, IOException, URISyntaxException {
-		credentials = new Gson().fromJson(Files
-				.asCharSource(new FileResourcesUtils().getFileFromResource("credentials.json"), Charsets.UTF_8).read(),
+
+		FileResourcesUtils app = new FileResourcesUtils();
+		credentials = new Gson().fromJson(
+				FileResourcesUtils.getValue(app.getFileFromResourceAsStream("credentials.json")),
 				new TypeToken<Credentials>() {
 				}.getType());
 
