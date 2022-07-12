@@ -3,6 +3,7 @@ package fr.fyz.lpb.commands.list;
 import java.awt.Color;
 import java.util.Random;
 
+import fr.fyz.lpb.commands.CommandManager;
 import fr.fyz.lpb.commands.ITCommand;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;

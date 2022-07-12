@@ -2,8 +2,8 @@ package fr.fyz.lpb.listeners;
 
 import org.jetbrains.annotations.NotNull;
 
+import fr.fyz.lpb.commands.CommandManager;
 import fr.fyz.lpb.commands.ITCommand;
-import fr.fyz.lpb.commands.list.CommandManager;
 import fr.fyz.lpb.commands.list.CommandQueue;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;

@@ -1,11 +1,22 @@
-package fr.fyz.lpb.commands.list;
+package fr.fyz.lpb.commands;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import fr.fyz.lpb.Main;
-import fr.fyz.lpb.commands.ITCommand;
+import fr.fyz.lpb.commands.list.Command8Ball;
+import fr.fyz.lpb.commands.list.CommandClearQueue;
+import fr.fyz.lpb.commands.list.CommandHelp;
+import fr.fyz.lpb.commands.list.CommandNowPlaying;
+import fr.fyz.lpb.commands.list.CommandPause;
+import fr.fyz.lpb.commands.list.CommandPlay;
+import fr.fyz.lpb.commands.list.CommandQueue;
+import fr.fyz.lpb.commands.list.CommandSecret;
+import fr.fyz.lpb.commands.list.CommandSetup;
+import fr.fyz.lpb.commands.list.CommandSkip;
+import fr.fyz.lpb.commands.list.CommandSong;
+import fr.fyz.lpb.commands.list.CommandStop;
 import net.dv8tion.jda.api.interactions.commands.Command;
 import net.dv8tion.jda.api.requests.restaction.CommandCreateAction;
 

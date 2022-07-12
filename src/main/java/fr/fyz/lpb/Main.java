@@ -59,7 +59,7 @@ public class Main {
 	@SuppressWarnings("serial")
 	public static void main(String[] args) throws LoginException, IOException, URISyntaxException {
 		credentials = new Gson().fromJson(Files
-				.asCharSource(new FileResourcesUtils().getFileFromResource("credentials.yml"), Charsets.UTF_8).read(),
+				.asCharSource(new FileResourcesUtils().getFileFromResource("credentials.json"), Charsets.UTF_8).read(),
 				new TypeToken<Credentials>() {
 				}.getType());
 

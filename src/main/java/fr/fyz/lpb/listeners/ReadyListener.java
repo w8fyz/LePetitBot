@@ -6,7 +6,7 @@ import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
 import fr.fyz.lpb.Main;
-import fr.fyz.lpb.commands.list.CommandManager;
+import fr.fyz.lpb.commands.CommandManager;
 import fr.fyz.lpb.music.lavaplayer.MusicCheckerTask;
 import fr.fyz.lpb.task.MOTDTask;
 import fr.fyz.lpb.task.StatsTask;
