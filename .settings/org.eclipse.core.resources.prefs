@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//src/main/java/fr/fyz/lpb/commands/list/Command8Ball.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/commands/list/CommandNowPlaying.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/commands/list/CommandPlay.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/commands/list/CommandSecret.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/commands/list/CommandSetup.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/commands/list/CommandSong.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/enums/Rules.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/listeners/CustomVoiceListener.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/listeners/RolesListener.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/listeners/WelcomeListener.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/music/lavaplayer/PlayerManager.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/spotify/auth/WebRequestHandler.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/task/MOTDTask.java=UTF-8
+encoding//src/main/java/fr/fyz/lpb/task/StatsTask.java=UTF-8
