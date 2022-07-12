@@ -6,9 +6,9 @@ import fr.fyz.lpb.enums.RAINBOW;
 import fr.fyz.lpb.enums.Rules;
 import fr.fyz.lpb.listeners.RolesListener;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.GuildMessageChannel;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Role;
-import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
@@ -39,7 +39,7 @@ public class CommandSetup implements ITCommand {
 
 			@Override
 			public void onCommand(SlashCommandInteractionEvent event) {
-				TextChannel txt = event.getOption("channel").getAsTextChannel();
+				GuildMessageChannel txt = event.getOption("channel").getAsMessageChannel();
 				String setup = event.getOption("setup").getAsString();
 				event.reply("Lancement du setup...").setEphemeral(true).queue();
 				switch (setup) {
@@ -103,8 +103,11 @@ public class CommandSetup implements ITCommand {
 						}
 					}
 					break;
+				case "annonceGithub":
+					txt.sendMessage("C'est trop la classe, merci Fyz 😎").queue();
+					break;
 				default:
-					event.reply("Erreur, setup introuvable !").setEphemeral(true).queue();
+					event.getChannel().sendMessage("Erreur, setup introuvable !").queue();
 					break;
 				}
 			}
