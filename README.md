@@ -1,12 +1,9 @@
 # LePetitBot ✨
 
 <a href="https://discord.gg/FXS9zMm" target="_blank">
-<img src=https://img.shields.io/badge/discord-7289DA.svg?&style=for-the-badge&logo=discord&logoColor=white alt=discord style="margin-bottom: 5px;"/>
+<img src=https://img.shields.io/badge/discord-7289DA.svg?&style=for-the-badge&logo=discord&logoColor=white alt=discord style="margin-bottom: 5px;"/></a>
 
-
-
-
-> LePetitBot est un bot discord utilisant les librairies suivantes :
+LePetitBot est un bot discord utilisant les librairies suivantes :
 - [JDA][jda]
 - [Jetty][jetty]
 - [Spotify -Web-Api-Java][spotify-api]
