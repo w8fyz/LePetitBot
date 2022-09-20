@@ -14,6 +14,7 @@ import fr.fyz.lpb.commands.list.CommandPlay;
 import fr.fyz.lpb.commands.list.CommandQueue;
 import fr.fyz.lpb.commands.list.CommandSecret;
 import fr.fyz.lpb.commands.list.CommandSetup;
+import fr.fyz.lpb.commands.list.CommandSkip;
 import fr.fyz.lpb.commands.list.CommandForceSkip;
 import fr.fyz.lpb.commands.list.CommandSong;
 import fr.fyz.lpb.commands.list.CommandStop;
@@ -30,7 +31,7 @@ public class CommandManager {
 		return "602669722668105729";
 	}
 	
-	private static ArrayList<ITCommand> commands = new ArrayList<ITCommand>(Arrays.asList(new CommandHelp(), new CommandQueue(), new CommandClearQueue(), new CommandForceSkip(), new CommandNowPlaying(), new CommandStop(), new CommandPause(), new CommandPlay(), /*new CommandPlural(),*/new CommandSetup(), new CommandSong(), new CommandSecret(), new Command8Ball()));
+	private static ArrayList<ITCommand> commands = new ArrayList<ITCommand>(Arrays.asList(new CommandHelp(), new CommandQueue(), new CommandClearQueue(), new CommandSkip(), new CommandForceSkip(), new CommandNowPlaying(), new CommandStop(), new CommandPause(), new CommandPlay(), /*new CommandPlural(),*/new CommandSetup(), new CommandSong(), new CommandSecret(), new Command8Ball()));
 
 	public static List<ITCommand> getCommands() {
 		return commands;
