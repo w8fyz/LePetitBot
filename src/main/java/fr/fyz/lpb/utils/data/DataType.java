@@ -4,13 +4,11 @@ import java.lang.reflect.Type;
 import java.util.Arrays;
 
 import com.google.common.reflect.TypeToken;
-
-import fr.fyz.lpb.pluralkit.PluralProfile;
 @SuppressWarnings("serial")
 public enum DataType {
 	
 	
-	TEMP_PLAYER("pluralmodules", PluralProfile.class, new TypeToken<PluralProfile>() {}.getType());
+	TEMP_PLAYER("pluralmodules", Object.class, new TypeToken<Object>() {}.getType());
 	
 	private String src;
 	private Class<?> dataClass;

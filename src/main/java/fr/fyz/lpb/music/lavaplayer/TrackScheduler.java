@@ -52,7 +52,7 @@ public class TrackScheduler extends AudioEventAdapter {
 		TextChannel txt = Main.getJDA().getTextChannelById("602672102205554688");
 		
 		EmbedBuilder eb = new EmbedBuilder();
-		eb.setColor(RAINBOW.YELLOW.getColor());
+		eb.setColor(RAINBOW.GREEN.getColor());
 		eb.setTimestamp(Instant.now());
 		eb.setThumbnail("https://img.youtube.com/vi/" + track.getInfo().uri.split("=")[1] + "/0.jpg");
 		eb.setAuthor("Lancement de la musique");
