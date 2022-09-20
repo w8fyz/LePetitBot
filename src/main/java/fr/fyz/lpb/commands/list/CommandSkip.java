@@ -99,4 +99,8 @@ public class CommandSkip implements ITCommand {
 		return (int)((g.getSelfMember().getVoiceState().getChannel().getMembers().size()-1) / 2);
 	}
 
+	public static void clearVotes() {
+		vote_skip.clear();
+	}
+
 }

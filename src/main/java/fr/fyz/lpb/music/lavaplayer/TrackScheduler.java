@@ -10,6 +10,7 @@ import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackEndReason;
 
 import fr.fyz.lpb.Main;
+import fr.fyz.lpb.commands.list.CommandSkip;
 import fr.fyz.lpb.commands.list.CommandSong;
 import fr.fyz.lpb.enums.RAINBOW;
 import net.dv8tion.jda.api.EmbedBuilder;
@@ -50,6 +51,8 @@ public class TrackScheduler extends AudioEventAdapter {
 	@Override
 	  public void onTrackStart(AudioPlayer player, AudioTrack track) {
 		TextChannel txt = Main.getJDA().getTextChannelById("602672102205554688");
+		
+		CommandSkip.clearVotes();
 		
 		EmbedBuilder eb = new EmbedBuilder();
 		eb.setColor(RAINBOW.GREEN.getColor());
